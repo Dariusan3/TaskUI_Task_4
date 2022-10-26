@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.patrat{
+    border-radius: 0%;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    animation: item-hover-off 1s
+
+}
+
+.patrat:hover{
+    border-radius: 100%;
+    background-color:red;
+    animation: item-hover 1s
+}
+
+@keyframes item-hover{
+    from{
+        border-radius: 0%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+    }
+    to{
+        border-radius: 100%;
+        background-color:red;
+    }
+}
+
+@keyframes item-hover-off{
+    from{
+        border-radius: 100%;
+        background-color:red;
+    }
+    to{
+        border-radius: 0%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+    }
+}
+
+
+
